@@ -94,11 +94,8 @@ class Player(pygame.sprite.Sprite):
 
 
     def __init__(self, x, y, filename):
-
         pygame.sprite.Sprite.__init__(self)
-
         self.image = pygame.image.load(filename).convert()
-
         self.rect = self.image.get_rect()
         self.rect.top = y
         self.rect.left = x
@@ -284,8 +281,8 @@ background.fill(black)
 clock = pygame.time.Clock()
 
 pygame.font.init()
-font = pygame.font.Font("freesansbold.ttf", 24)
-w = 303 - 16  # Width
+font = pygame.font.Font("shrift.ttf", 24)
+w = 303 - 16
 p_h = (7 * 60) + 19
 m_h = (4 * 60) + 19
 b_h = (3 * 60) + 19
